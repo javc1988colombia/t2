@@ -6,7 +6,7 @@
     <ProductVersion>
     </ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{D348076F-55D8-4D71-B99C-2917A226FF6D}</ProjectGuid>
+    <ProjectGuid>{EEA2F746-6227-4008-9402-A9BA097EBF70}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>t2.Tests</RootNamespace>
@@ -110,7 +110,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\t2\t2.csproj">
-      <Project>{63B7C485-D374-43BC-8684-2DB5EBA1FDDC}</Project>
+      <Project>{B0C0BF3C-3F1C-4345-8095-792B5E589D41}</Project>
       <Name>t2</Name>
     </ProjectReference>
   </ItemGroup>
