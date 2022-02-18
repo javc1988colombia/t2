@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Data;
 using System.Data.Entity;
 using System.Data.Entity.Infrastructure;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
 using System.Web.Http.Description;
+using t2.Mappers;
 using t2.Models;
 
 namespace t2.Controllers
@@ -113,12 +115,6 @@ namespace t2.Controllers
         private bool OrdersExists(int id)
         {
             return db.Orders.Count(e => e.orderid == id) > 0;
-        }
-
-        [Route("api/Orders/names")]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "student1", "student2" };
         }
     }
 }
