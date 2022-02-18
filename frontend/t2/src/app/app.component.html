@@ -344,16 +344,18 @@
       <tr *ngFor="let clientOrder of clientOrders; index as i">
         <th scope="row">{{ i + 1 }}</th>
         <td>{{ clientOrder.OrderId | number }}</td>
-        <td>VIEW ORDERS</td>
-        <td>NEW ORDER</td>
+        <td><app-order-form></app-order-form></td>
+        <td><app-order-details></app-order-details></td>
       </tr>
       </tbody>
     </table>
   </div>
 
+
+
   <!-- Footer -->
   <footer>
-    <app-order-form></app-order-form>
+
   </footer>
 
 
