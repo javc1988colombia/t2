@@ -28,10 +28,10 @@ namespace t2.Models
                 .WithOptional(e => e.Employees2)
                 .HasForeignKey(e => e.mgrid);
 
-            modelBuilder.Entity<Employees>()
+            /*modelBuilder.Entity<Employees>()
                 .HasMany(e => e.Orders)
                 .WithRequired(e => e.Employees)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(false);*/
 
             modelBuilder.Entity<Categories>()
                 .HasMany(e => e.Products)
@@ -64,15 +64,15 @@ namespace t2.Models
                 .Property(e => e.freight)
                 .HasPrecision(19, 4);
 
-            modelBuilder.Entity<Orders>()
+            /*modelBuilder.Entity<Orders>()
                 .HasMany(e => e.OrderDetails)
                 .WithRequired(e => e.Orders)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(false);*/
 
-            modelBuilder.Entity<Shippers>()
+            /*modelBuilder.Entity<Shippers>()
                 .HasMany(e => e.Orders)
                 .WithRequired(e => e.Shippers)
-                .WillCascadeOnDelete(false);
+                .WillCascadeOnDelete(false);*/
         }
     }
 }

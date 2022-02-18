@@ -12,7 +12,7 @@ namespace t2.Models
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public Orders()
         {
-            OrderDetails = new HashSet<OrderDetails>();
+            //OrderDetails = new HashSet<OrderDetails>();
         }
 
         [Key]
@@ -55,13 +55,13 @@ namespace t2.Models
         [StringLength(15)]
         public string shipcountry { get; set; }
 
-        public virtual Employees Employees { get; set; }
+        //public virtual Employees Employees { get; set; }
 
-        public virtual Customers Customers { get; set; }
+       // public virtual Customers Customers { get; set; }
 
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<OrderDetails> OrderDetails { get; set; }
+        /*[System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<OrderDetails> OrderDetails { get; set; }*/
 
-        public virtual Shippers Shippers { get; set; }
+        //public virtual Shippers Shippers { get; set; }
     }
 }
