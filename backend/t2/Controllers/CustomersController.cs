@@ -8,6 +8,7 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
+using System.Web.Http.Cors;
 using System.Web.Http.Description;
 using t2.Mappers;
 using t2.Models;
@@ -117,6 +118,7 @@ namespace t2.Controllers
             return db.Customers.Count(e => e.custid == id) > 0;
         }
 
+        [EnableCors(origins: "*", headers: "*", methods: "*", exposedHeaders: "X-Custom-Header")]
         [Route("api/Customers/{id}/Orders")]
         public IEnumerable<OrdersByCustomerMapper> Get(int id)
         {

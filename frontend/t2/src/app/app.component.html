@@ -7,7 +7,9 @@
 <!-- * * * * * * * to get started with your project! * * * * * * * * -->
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
 
+
 <style>
+
   :host {
     font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     font-size: 14px;
@@ -334,19 +336,16 @@
       <tr>
         <th scope="col">#</th>
         <th scope="col">Country</th>
-        <th scope="col">Area</th>
-        <th scope="col">Population</th>
+        <th scope="col"></th>
+        <th scope="col"></th>
       </tr>
       </thead>
       <tbody>
-      <tr *ngFor="let country of countries; index as i">
+      <tr *ngFor="let clientOrder of clientOrders; index as i">
         <th scope="row">{{ i + 1 }}</th>
-        <td>
-          <img [src]="'https://upload.wikimedia.org/wikipedia/commons/' + country.flag" class="me-2" style="width: 20px">
-          {{ country.name }}
-        </td>
-        <td>{{ country.area | number }}</td>
-        <td>{{ country.population | number }}</td>
+        <td>{{ clientOrder.OrderId | number }}</td>
+        <td>VIEW ORDERS</td>
+        <td>NEW ORDER</td>
       </tr>
       </tbody>
     </table>
@@ -354,7 +353,7 @@
 
   <!-- Footer -->
   <footer>
-
+    <app-order-form></app-order-form>
   </footer>
 
 

@@ -97,3 +97,6 @@ C:\Users\User\Documents\t2\backend\t2\obj\Debug\t2.csproj.CoreCompileInputs.cach
 C:\Users\User\Documents\t2\backend\t2\obj\Debug\t2.csproj.CopyComplete
 C:\Users\User\Documents\t2\backend\t2\obj\Debug\t2.dll
 C:\Users\User\Documents\t2\backend\t2\obj\Debug\t2.pdb
+C:\Users\User\Documents\t2\backend\t2\bin\System.Web.Cors.dll
+C:\Users\User\Documents\t2\backend\t2\bin\System.Web.Http.Cors.dll
+C:\Users\User\Documents\t2\backend\t2\bin\System.Web.Http.Cors.xml
